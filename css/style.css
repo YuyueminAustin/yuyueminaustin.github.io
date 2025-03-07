@@ -410,7 +410,7 @@ a {
   text-align: center;
   /* Center the text */
   @media (max-width: 768px) {
-    width: 100%;
+    width: 85%;
     /* Make the items take up the full width of the container */
   }
 }
