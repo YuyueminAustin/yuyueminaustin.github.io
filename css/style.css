@@ -404,7 +404,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30%;
+  width: 40%;
   /* Ensure the items take up 30% of the container's width */
   margin: 0.5rem;
   text-align: center;
@@ -416,4 +416,12 @@ a {
   /* Make the image take up the full width of the container */
   margin-bottom: 0.5rem;
   /* Add margin below the image */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .view-item {
+    width: 100%;
+    /* Make the items take up 100% of the container's width on smaller screens */
+  }
 }
