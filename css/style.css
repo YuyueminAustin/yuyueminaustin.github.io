@@ -409,6 +409,10 @@ a {
   margin: 0.5rem;
   text-align: center;
   /* Center the text */
+  @media (max-width: 768px) {
+    width: 100%;
+    /* Make the items take up the full width of the container */
+  }
 }
 
 .view-item img {
@@ -416,12 +420,4 @@ a {
   /* Make the image take up the full width of the container */
   margin-bottom: 0.5rem;
   /* Add margin below the image */
-}
-
-/* Media query for smaller screens */
-@media (max-width: 600px) {
-  .view-item {
-    width: 100%;
-    /* Make the items take up 100% of the container's width on smaller screens */
-  }
 }
