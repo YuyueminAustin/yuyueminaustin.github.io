@@ -335,19 +335,21 @@ body {
   }
 }
 
-/* publication list */
-.publication-list {
-  display: grid;
-  grid-gap: 1rem;
+/* publication */
+.pub-section{
   padding-top: 2rem;
 }
 
 .publication-list {
   font-size: 0.9rem;
-  list-style-type: decimal;
-  list-style-position: inside;
   text-align: left;
   /* Set a smaller font size for the entire list */
+}
+
+.pub-order {
+  font-weight: bold;
+  font-family: sans-serif;
+  /* Make the list marker bold */
 }
 
 .publication-list li::marker {
