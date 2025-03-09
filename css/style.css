@@ -342,6 +342,85 @@ body {
   padding-top: 2rem;
 }
 
+.publication-list {
+  font-size: 0.9rem;
+  list-style-type: decimal;
+  list-style-position: inside;
+  text-align: left;
+  /* Set a smaller font size for the entire list */
+}
+
+.publication-list li::marker {
+  font-family: 'Raleway', sans-serif;
+  /* Specify the font family */
+  font-weight: bold;
+  /* Make the list marker bold */
+  font-size: 1rem;
+  /* Adjust the font size if needed */
+}
+
+.publication-list h5 {
+  font-size: 0.9rem;
+  /* Set a smaller font size for the headings */
+}
+
+.publication-list p {
+  font-size: 0.9rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  /* Set a smaller font size for the paragraphs */
+}
+
+.publication-list a {
+  font-size: 0.9rem;
+  /* Set a smaller font size for the links */
+}
+
+.btn_demo {
+  background-color: #ffffff; /* White background */
+  color: #dbb449; /* Different font color */
+  border: 1px solid #dbb449; /* Border color */
+  border-radius: 5px; /* Smaller border radius */
+  text-decoration: none;
+  font-size: 0.8rem; /* Smaller font size */
+  font-weight: 600;
+  padding: 0 0.5rem; /* Smaller padding */
+  transition: 0.3s;
+}
+
+.btn_pdf {
+  background-color: #ffffff; /* White background */
+  color: #42a5f5; /* Different font color */
+  border: 1px solid #42a5f5; /* Border color */
+  border-radius: 5px; /* Smaller border radius */
+  text-decoration: none;
+  font-size: 0.8rem; /* Smaller font size */
+  font-weight: 600;
+  padding: 0 0.5rem; /* Smaller padding */
+  transition: 0.3s;
+}
+
+.btn_doi {
+  background-color: #ffffff; /* White background */
+  color: #66bb6a; /* Different font color */
+  border: 1px solid #66bb6a; /* Border color */
+  border-radius: 5px; /* Smaller border radius */
+  text-decoration: none;
+  font-size: 0.8rem; /* Smaller font size */
+  font-weight: 600;
+  padding: 0 0.5rem; /* Smaller padding */
+  transition: 0.3s;
+}
+
+.btn_demo:hover,
+.btn_pdf:hover,
+.btn_doi:hover {
+  /* Change font color on hover */
+  color: grey;
+  /* Slightly enlarge the button on hover */
+  transform: scale(1.05);
+}
+
 a {
   color: deepskyblue;
 }

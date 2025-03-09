@@ -104,6 +104,15 @@ h2::selection {
   max-width: 900px;
 }
 
+#publication p {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
 #publication .content-text ul {
   padding-top: 2rem;
   margin: 0 auto;
