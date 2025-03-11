@@ -203,3 +203,9 @@ h2::selection {
     font-size: 2rem;
   }
 }
+
+.news-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0;
+}

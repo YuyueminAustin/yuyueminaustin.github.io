@@ -166,7 +166,7 @@ body {
 #projects {
   display: flex;
   flex-direction: column;
-  margin: 2rem auto 3rem;
+  margin: 5rem auto 3rem;
 }
 
 #projects .btn {
@@ -458,7 +458,7 @@ a {
 
 #experience th,
 #awards th {
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
   font-weight: bold;
 }
 
@@ -501,4 +501,17 @@ a {
   /* Make the image take up the full width of the container */
   margin-bottom: 0.5rem;
   /* Add margin below the image */
+}
+
+#personal {
+    margin: 5rem auto 3rem;
+}
+
+.restore-color {
+  color: var(--text-color);
+}
+
+#news-content {
+  padding-top: 1rem;
+  text-align: left;
 }
