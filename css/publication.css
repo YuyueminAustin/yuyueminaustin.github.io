@@ -1,0 +1,25 @@
+/* Add to your existing CSS */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#footer {
+    margin-top: auto;
+}
+
+/* Existing header styles - ensure they don't have fixed height */
+#hero .navbar {
+    /* Remove any fixed height if present */
+    height: auto;
+    min-height: 80px;
+    /* Adjust based on your logo size if needed */
+}
+
+/* Optional: Ensure content section takes available space */
+#publication {
+    flex: 1 0 auto;
+    width: 100%;
+    padding-top: 3rem;
+}
