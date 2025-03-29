@@ -535,3 +535,11 @@ a {
 .publication-paragraph {
   padding-top: 1rem;
 }
+
+.motto {
+  color: #e0dfdf;
+  text-align: right;
+  margin-right: 1rem;
+  padding-bottom: 0.5rem;
+  font-style: italic;
+}
