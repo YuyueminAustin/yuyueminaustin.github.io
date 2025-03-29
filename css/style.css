@@ -502,6 +502,8 @@ a {
   /* Make the image take up the full width of the container */
   margin-bottom: 0.5rem;
   /* Add margin below the image */
+  object-fit: cover;
+  max-height: 300px;
 }
 
 #personal {
