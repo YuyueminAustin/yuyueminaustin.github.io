@@ -7,11 +7,18 @@
     /* Center-align the text */
     padding: 0;
     /* Remove default padding */
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Two equal-width columns */
+    gap: 1rem;
+    /* Add spacing between grid items */
 }
 
 .personal-list ul li {
     margin-bottom: 0.5rem;
     /* Add spacing between list items */
+    text-align: center;
 }
 
 #friends {
