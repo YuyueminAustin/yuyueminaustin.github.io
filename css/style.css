@@ -31,6 +31,14 @@
   --width-large: 1300px;
 }
 
+@media (min-width: 2560px) {
+  :root {
+    --width-small: 1500px;
+    --width-medium: 1800px;
+    --width-large: 2200px;
+  }
+}
+
 [data-theme="dark"] {
   --primary-color: #ffcd42;
   --secondary-color: #ffd35c;
@@ -542,4 +550,8 @@ a {
   margin-right: 1rem;
   padding-bottom: 0.5rem;
   font-style: italic;
+}
+
+.intro {
+  max-width: var(--width-medium);
 }

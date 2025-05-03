@@ -101,7 +101,7 @@ h2::selection {
 .content-text p {
   padding: 0.5rem;
   margin: 0 auto;
-  max-width: 900px;
+
 }
 
 #publication p {
@@ -110,12 +110,12 @@ h2::selection {
   padding-top: 0.2rem;
   padding-bottom: 0;
   margin: 0 auto;
-  max-width: 900px;
+
 }
 
 #publication .content-text ul {
   margin: 0 auto;
-  max-width: 900px;
+
 }
 
 /* Project cards */
