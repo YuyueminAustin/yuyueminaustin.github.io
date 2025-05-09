@@ -175,7 +175,7 @@ body {
 #projects {
   display: flex;
   flex-direction: column;
-  margin: 2rem auto 3rem;
+  margin: 2rem auto 0;
 }
 
 #projects .btn {
@@ -529,16 +529,17 @@ a {
 
 #pub-link {
   text-decoration: none;
+  color: #a020f0; /* Brighter purple */
 }
 
 #pub-link:hover {
   text-decoration: underline;
 }
 
-#pub-link:after {
+/* #pub-link:after {
   content: "→";
   font-size: 0.8rem;
-}
+} */
 
 .publication-paragraph {
   padding-top: 1rem;
