@@ -205,7 +205,7 @@ h2::selection {
 }
 
 .news-container {
-  max-width: 700px;
+  max-width: var(--width-small);
   margin: 0 auto;
   padding: 0;
 }
