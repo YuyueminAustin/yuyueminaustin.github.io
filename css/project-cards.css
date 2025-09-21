@@ -163,3 +163,17 @@
     margin-bottom: 0.5rem;
   }
 }
+
+/* Ensure publication thumbnails stack on top of text on narrow screens */
+@media (max-width: 600px) {
+  .publication-info-block {
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: stretch;
+  }
+  .publication-info-block .pub-thumb {
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+  }
+}
