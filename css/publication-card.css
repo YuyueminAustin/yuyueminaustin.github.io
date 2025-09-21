@@ -29,6 +29,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%; /* ensure info fills the available width */
 }
 .publication-title {
   font-weight: 600;
@@ -45,12 +46,38 @@
   color: #888;
   margin-bottom: 0.2rem;
 }
+.publication-links {
+  margin-top: 0.5rem;
+}
 .publication-links a {
   color: #0077cc;
   text-decoration: underline;
   font-size: 0.95rem;
   margin-right: 1rem;
 }
+
+/* Thumbnail inside publication info block */
+.publication-info-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+}
+.publication-info-block .pub-thumb {
+  flex: 0 0 220px; /* larger thumbnail */
+  width: 220px;
+  height: 140px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.publication-info-block .pub-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 @media (max-width: 600px) {
   .publication-card {
     flex-direction: column;
@@ -63,5 +90,10 @@
     margin-right: 0;
     margin-bottom: 0.5rem;
     justify-content: flex-start;
+  }
+  .publication-info-block .pub-thumb {
+    flex: 0 0 160px;
+    width: 160px;
+    height: 100px;
   }
 }

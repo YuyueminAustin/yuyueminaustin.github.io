@@ -41,13 +41,39 @@
 .project-list {
   display: flex;
   flex-direction: column;
-  gap: 2.2rem;
+  gap: 1rem; /* reduced vertical gap between topic boxes */
 }
 .project-entry {
   display: flex;
   align-items: flex-start;
   gap: 1.5rem;
 }
+
+/* Topic box to group related projects/publications */
+.topic-box {
+  border-radius: 12px;
+  padding: 0.75rem; /* slightly reduced padding */
+  background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(245,250,255,0.95));
+  box-shadow: 0 4px 18px rgba(2,27,57,0.04);
+  border: 1px solid rgba(0,119,204,0.06);
+}
+
+.publication-card {
+  width: 100%; /* ensure the card fills the topic box */
+}
+.topic-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem; /* tighten spacing under title */
+  color: #003b66;
+}
+
+/* center the topic title horizontally */
+.topic-box .topic-title {
+  width: 100%;
+  text-align: center;
+}
+
 .project-img {
   flex: 0 0 200px;
   max-width: 260px;
@@ -117,6 +143,7 @@
   color: #0077cc;
   margin-bottom: 0.12rem;
   font-weight: 600;
+  margin-top: 0.5rem;
 }
 .publication-links a {
   color: #005fa3;
