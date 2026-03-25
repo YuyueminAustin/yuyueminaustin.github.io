@@ -19,7 +19,8 @@
 
 .personal-page {
   padding: calc(64px + var(--spacing-3xl)) var(--spacing-lg) var(--spacing-3xl);
-  min-height: 100vh;
+  min-height: auto;
+  flex: 1;
 }
 
 .personal-container {
