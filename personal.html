@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Primary Meta Tags -->
-    <title>Yuemin's Personal Page</title>
-    <meta name="title" content="Yuemin's Personal Page" />
+    <title>Yuemin's Page</title>
+    <meta name="title" content="Yuemin's Page" />
     <meta name="description" content="" />
 
     <!-- Favicon -->
@@ -16,119 +16,110 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png?v=2">
     <link rel="manifest" href="assets/favicon/site.webmanifest?v=2">
 
-    <!-- Link -->
+    <!-- Fonts & Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utilities.css" />
-    <link rel="stylesheet" href="css/publication.css" />
     <link rel="stylesheet" href="css/personal.css" />
   </head>
   <body>
-    <header id="hero">
-      <!-- Navbar -->
-      <nav class="navbar">
-        <div class="container">
-          <!-- Logo -->
-          <h1 id="logo">
-            <a href="/"
-              ><img src="./assets/branding/logo.gif" alt="Your Logo"
-            /></a>
-          </h1>
-          <!-- Navbar links -->
-          <ul class="nav-menu">
-            <li><a class="nav-link" href="/">HOME</a></li>     
+    <!-- Navbar -->
+    <nav class="navbar navbar-personal">
+      <div class="nav-container">
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-menu">
+          <li><a class="nav-link" href="/">Back to Home</a></li>
+        </ul>
+        <div class="logo logo-right">
+          <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;"><img src="./assets/icons/theme/back-to-the-top-8.png" alt="Back to Top" /></a>
+        </div>
+      </div>
+    </nav>
 
-            <!-- Toggle switch -->
-            <!-- <div class="theme-switch">
-              <input type="checkbox" id="switch" />
-              <label class="toggle-icons" for="switch">
-                <img class="moon" src="assets/icons/theme/moon.svg" />
-                <img class="sun" src="assets/icons/theme/sun.svg" />
-              </label>
-            </div> -->
-            <!-- Hamburger menu -->
-          </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+    <!-- Personal Page Content -->
+    <section class="personal-page">
+      <div class="personal-container">
+         <h1 class="personal-title">Beyond Research</h1>
+         <p class="personal-subtitle">Photos, memories, and connections                <div class="personal-section personal-note-section">
+                   <p class="motto">一個健康的社會, 不應該只有一種聲音</p>
+                 </div></p>
+
+        <!-- Interesting Items -->
+        <div class="personal-section">
+          <h2 class="personal-section-title">Interesting Items</h2>
+          <div class="personal-list">
+            <div class="personal-item">
+              <p><strong>COMP3516 Group Project Report:</strong> Real-time motion detection and breath estimation system built on ESP32C5 boards using WiFi signals for sensing and analysis (<a href="interesting/COMP3516_Group_Project_Report.pdf" target="_blank" rel="noopener">PDF</a>, HKU, 2025).</p>
+            </div>
+            <div class="personal-item">
+              <p><strong>Acknowledgement for UG Final Year Project</strong> (<a href="assets/documents/reports/FYP.pdf" target="_blank" rel="noopener">PDF</a>, HKU, 2025).</p>
+            </div>
           </div>
         </div>
-      </nav>
-    </header>
 
-    <!-- Personal -->
-    <section id="personal" class="container">
-      <div class="content-text">
-        <span style="padding: 1rem"></span>
-        <h2 style="text-align: center;">Miscs</h2>
-        <div class="content-text news-container">
-          <span style="padding: 0.8rem"></span>
-          <h3 id="aboutme">Something interesting to share</h3>
-          <div class="interesting-list-simple" style="text-align: left; padding-top:0.8rem;">
-            <ul>
-              <li style="list-style-type: disc;"><strong>COMP3516 Group Project Report:</strong> Real-time motion detection
-                and breath estimation system built on ESP32C5 boards using WiFi signals for sensing and analysis (<a
-                  href="interesting/COMP3516_Group_Project_Report.pdf" target="_blank" rel="noopener">PDF</a>, HKU, 2025).
-              </li>
-              <li style="list-style-type: disc;"><strong>My Acknowledgement for my UG Final Year Project</strong> (<a
-                  href="assets/documents/reports/FYP.pdf" target="_blank" rel="noopener">PDF</a>, HKU, 2025).</li>
-            </ul>
-          </div>
-          <div class="division""></div>
-          <h3>A little about the past</h3>
-          <p>
-            I studied at Shanghai Lansheng Fudan Middle School, a top school in Shanghai, from 2014 to 2018. <br>
-            Update on 11/2024: Congratulations to Lansheng's 30th Anniversary!
-          </p>
-
-          <div class="division"></div>
-          <h3>Some nice views</h3>
-          <div class="view-container">
-            <div class="view-item">
-              <img src="assets/personal/gallery/niagara.jpg" alt="1">
-              <p>This is a picture I took at the Niagara Falls, I visited there during my exchange semester at University of
-                Toronto.</p>
-            </div>
-            <div class="view-item">
-              <img src="assets/personal/gallery/ducks.jpg" alt="2">
-              <p>Rubber Ducks in Victoria Harbour, Hong Kong.</p>
-            </div>
-            <div class="view-item">
-              <img src="assets/personal/gallery/eaton.jpg" alt="1">
-              <p>Eaton Center, Toronto, Canada.</p>
-            </div>
-            <div class="view-item">
-              <img src="assets/personal/gallery/cathay.jpg" alt="2">
-              <p>Hong Kong's Cathay Pacific Airways.</p>
-            </div>
-          </div>
-          
-        <div class="division"></div>
-        <h3>Friends</h3>
-        <p>Here are links to personal pages of some of my friends and seniors. I am always grateful for all the help I received, which is way beyond this short and incomplete list :)</p>
-        <div class="personal-list">
-          <ul>
-            <li><a href="https://research.ethanlyu.top/" target="_blank" rel="noopener" class="restore-color">Sheng Lyu</a></li>
-            <li><a href="https://linkedin.com/in/jiahao-gan" target="_blank" rel="noopener" class="restore-color">Jiahao Gan</a></li>
-            <li><a href="https://linkedin.com/in/loridy-luo-012ab021b" target="_blank" class="restore-color" rel="noopener">Ruidi Luo</a></li>
-            <li><a href="https://heentong.github.io" target="_blank" rel="noopener" class="restore-color">Entong He</a></li>
-            <li><a href="https://dennis-yxchen.github.io/" target="_blank" rel="noopener" class="restore-color">Yuxuan Chen</a></li>
-          </ul>
+        <!-- About -->
+        <div class="personal-section">
+          <h2 class="personal-section-title">A Little About the Past</h2>
+          <p class="personal-text">I studied at Shanghai Lansheng Fudan Middle School, a top school in Shanghai, from 2014 to 2018.</p>
+          <p class="personal-text personal-update">Update on 11/2024: Congratulations to Lansheng's 30th Anniversary!</p>
         </div>
-      </div>      
+
+        <!-- Photo Gallery -->
+        <div class="personal-section">
+          <h2 class="personal-section-title">Some Nice Views</h2>
+          <div class="gallery">
+            <div class="gallery-item">
+              <img src="assets/personal/gallery/niagara.jpg" alt="Niagara Falls">
+              <p class="gallery-caption">Niagara Falls — visited during exchange semester at University of Toronto</p>
+            </div>
+            <div class="gallery-item">
+              <img src="assets/personal/gallery/ducks.jpg" alt="Rubber Ducks">
+              <p class="gallery-caption">Rubber Ducks in Victoria Harbour, Hong Kong</p>
+            </div>
+            <div class="gallery-item">
+              <img src="assets/personal/gallery/eaton.jpg" alt="Eaton Center">
+              <p class="gallery-caption">Eaton Center, Toronto, Canada</p>
+            </div>
+            <div class="gallery-item">
+              <img src="assets/personal/gallery/cathay.jpg" alt="Cathay Pacific">
+              <p class="gallery-caption">Hong Kong's Cathay Pacific Airways</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Friends -->
+        <div class="personal-section">
+          <h2 class="personal-section-title">Friends & Colleagues</h2>
+          <p class="personal-intro">Links to personal pages of some friends and seniors. This list is incomplete, grateful for all the help and support!</p>
+          <div class="friends-grid">
+            <a href="https://research.ethanlyu.top/" target="_blank" rel="noopener" class="friend-link">Sheng Lyu</a>
+            <a href="https://linkedin.com/in/jiahao-gan" target="_blank" rel="noopener" class="friend-link">Jiahao Gan</a>
+            <a href="https://linkedin.com/in/loridy-luo-012ab021b" target="_blank" rel="noopener" class="friend-link">Ruidi Luo</a>
+            <a href="https://heentong.github.io" target="_blank" rel="noopener" class="friend-link">Entong He</a>
+            <a href="https://dennis-yxchen.github.io/" target="_blank" rel="noopener" class="friend-link">Yuxuan Chen</a>
+          </div>
+        </div>
+
+        <!-- Note -->
+      </div>
     </section>
 
-
     <!-- Footer -->
-    <footer id="footer">
-      <div class="container">
-        <!-- Attribution -->
-        <p>Copyright &copy; Yuemin Yu <span id="datee"></span>, All rights reserved</p>
-        <p>Last updated: 2026-03-14</p>
+    <footer class="footer">
+      <div class="footer-container">
+        <p>&copy; 2025 Yuemin Yu. All rights reserved.</p>
+        <p class="footer-meta">Last updated: March 2025</p>
       </div>
     </footer>
-    
+
     <script src="js/script.js"></script>
   </body>
 </html>

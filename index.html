@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Primary Meta Tags -->
-    <title>Yuemin's Personal Page</title>
-    <meta name="title" content="Yuemin's Personal Page" />
+    <title>Yuemin's Page</title>
+    <meta name="title" content="Yuemin's Page" />
     <meta name="description" content="" />
 
     <!-- Favicon -->
@@ -16,201 +16,234 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png?v=2">
     <link rel="manifest" href="assets/favicon/site.webmanifest?v=2">
 
-    <!-- Link -->
+    <!-- Fonts & Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utilities.css" />
     <link rel="stylesheet" href="css/publication-card.css" />
-    <link rel="stylesheet" href="css/project-cards.css" />
   </head>
   <body>
     <div class="site-wrapper">
-    <header id="hero">
       <!-- Navbar -->
       <nav class="navbar">
-        <div class="container">
-          <!-- Logo -->
-          <h1 id="logo">
-            <a href="#"
-              ><img src="./assets/branding/logo.gif" alt="Your Logo"
-            /></a>
-          </h1>
-          <!-- Navbar links -->
-          <ul class="nav-menu">
-            <li><a class="nav-link" href="#">HOME</a></li>
-            <li><a class="nav-link" href="#projects">RESEARCH</a></li>  
-            <li><a class="nav-link" href="#awards">AWARDS</a></li>
-            <li><a class="nav-link" href="#services">SERVICES</a></li>
-            <li><a class="nav-link" href="#teaching">TEACHING</a></li>
-            <li><a class="nav-link" href="#misc">MISCS</a></li>
-          </ul>
+        <div class="nav-container">
           <div class="hamburger">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
           </div>
+          <ul class="nav-menu">
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#research">Research</a></li>
+            <li><a class="nav-link" href="#awards">Awards</a></li>
+            <li><a class="nav-link" href="#services">Service</a></li>
+            <li><a class="nav-link" href="#teaching">Teaching</a></li>
+          </ul>
+          <div class="logo">
+            <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;"><img src="./assets/icons/theme/back-to-the-top-8.png" alt="Back to Top" /></a>
+          </div>
         </div>
       </nav>
 
-      <section class="header-container">
-        <img
-          class="profile-image"
-          src="assets/profile/me.jpg"
-          alt=""
-        />
-        <h1>Hi There! This is Yuemin.</h1>
+      <!-- Hero Section -->
+      <header id="about" class="hero">
+        <div class="hero-container">
+          <div class="profile-section">
+            <img class="profile-image" src="assets/profile/me.jpg" alt="Yuemin Yu" />
+            <div class="hero-content">
+              <h1 class="hero-title">Yuemin Yu <span class="hero-subtitle">余越旻</span></h1>
+              <p class="hero-tagline">MPhil Student · HKU</p>
+            </div>
+          </div>
 
-        <div class="content-text">
-          <div class="card-text">
-            <p class="intro">I'm Yuemin Yu (<em>"余越旻"</em> in Chinese characters, just call me Yuemin, or Austin, or whatever you like), an <strong>MPhil</strong> (Master by research) student at the <a href="https://www.cs.hku.hk/" class="restore-color">Department of Computer Science</a>,
-                <a href="https://www.cds.hku.hk/">School of Computing and Data Science</a>, The University of Hong Kong (HKU CDS), working with <a href="https://cswu.me">Prof. Chenshu Wu</a> at <a href="https://aiot.hku.hk/">HKU AIoT Lab</a>. My current research interests focus on <strong><span style="color: green">Spatial and Physical AI</span></strong>, where I try to leverage signals, physics priors and human interactions with the environment to understand the real world, build intelligent systems and create novel interfaces for human and AI.</p>
+          <div class="hero-bio">
+            <p>I'm an <strong>MPhil</strong> student at the <a href="https://www.cs.hku.hk/">Department of Computer Science</a>, <a href="https://www.cds.hku.hk/">School of Computing and Data Science</a>, The University of Hong Kong, working with <a href="https://cswu.me">Prof. Chenshu Wu</a> at <a href="https://aiot.hku.hk/">HKU AIoT Lab</a>. 
+            Previously, I received my <strong>BEng</strong> in Computer Science from HKU (2025), was an exchange student at <a href="https://www.utoronto.ca">University of Toronto</a> (2024), and a research intern at Western University under <a href="https://phulab.org">Prof. Pingzhao Hu</a> (2024).</p>
+            
+            <p>My research focuses on <strong class="accent-text">Spatial and Physical AI</strong> — leveraging signals, physics priors, and human-environment interactions to understand the real world, build intelligent systems, and create novel interfaces for human and AI.</p>
 
-            <p class="intro">Previously, I received my <strong>BEng</strong> degree in Computer Science from HKU CDS in Summer 2025. During my undergraduate study, I worked under the supervision of <a
-                href="https://phulab.org">Prof. Pingzhao Hu</a> at Western University, Canada. I have also spent wonderful time during the exchange semester at <a href="https://www.utoronto.ca" class="restore-color">University of Toronto</a> during 2024 Winter semester.
-            </p>
-      
-            <p class="intro">More details are available by clicking the links in the navigation bar, and <span style="color: green">please
-                feel free to contact me</span> 👋 (ah, click the icons below!) if you have any questions or want to discuss some interesting topics!</p>
+
+            <p><span class="accent-text">Feel free to contact me</span> 👋 if you'd like to discuss research or interesting topics!</p>
+          </div>
+
+          <div class="social-links">
+            <a href="mailto:yuyuemin@connect.hku.hk" class="social-icon" title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/yuemin-yu-63aa1622b" target="_blank" rel="noopener" class="social-icon" title="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/YuyueminAustin" target="_blank" rel="noopener" class="social-icon" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://scholar.google.com/citations?user=QToTjaAAAAAJ" target="_blank" rel="noopener" class="social-icon" title="Google Scholar">
+              <i class="fas fa-graduation-cap"></i>
+            </a>
+            <a href="https://orcid.org/0009-0009-9298-4652" target="_blank" rel="noopener" class="social-icon" title="ORCID">
+              <i class="fab fa-orcid"></i>
+            </a>
+            <a href="assets/documents/cv/YUEMIN_YU_CV.pdf" target="_blank" class="social-icon" title="CV">
+              <i class="fas fa-file-pdf"></i>
+            </a>
           </div>
         </div>
-        
-        <!-- Social links -->
-        <div class="social">
-          <a href="mailto:yuyuemin@connect.hku.hk"><img src="./assets/icons/contact/email.png" alt="email"/></a>
-          <a href="https://www.linkedin.com/in/yuemin-yu-63aa1622b" rel="noopener" target="_blank"><img src="./assets/icons/contact/linkedin-icon.png" alt="Linkedin" /></a>
-          <a href="https://github.com/YuyueminAustin" target="_blank" rel="noopener"><img src="./assets/icons/contact/github-icon.png" alt="GitHub" /></a>
-          <a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AKzYXQ1IHVE6-A6P8eXXTChOVuyyfivLRg4fYKOcTI4uuImk_Oe9iiFBxqEjKYueCVAE2dZ-etsHonfKr2-6xBDgE_-p&user=QToTjaAAAAAJ" target="_blank" rel="noopener"><img src="./assets/icons/contact/google-scholar.jpg" alt="Google Scholar" /></a>
-          <a href="https://orcid.org/0009-0009-9298-4652" target="_blank" rel="noopener"><img src="./assets/icons/contact/orcid.png" alt="Orcid" /></a>
-          <a href="assets/documents/cv/YUEMIN_YU_CV.pdf" target="CV"><img src="./assets/icons/document/cv1.png" alt="CV" /></a>
+      </header>
+
+      <!-- Research Section -->
+      <section id="research" class="section">
+        <div class="section-container">
+          <h2 class="section-title">Research</h2>
+          <div class="publications">
+
+              <article class="publication-item">
+                <div class="pub-thumb"><img src="assets/research/projects/loom.jpg" alt="Loom" /></div>
+                <div class="pub-content">
+                  <h3 class="pub-title">Loom: Leveraging In-situ Smart Speakers for Scalable Neural Floorplan Inference
+                  </h3>
+                  <p class="pub-authors">Sheng Lyu, <strong class="pub-me">Yuemin Yu</strong>, Chenshu Wu</p>
+                  <p class="pub-venue"><span class="venue-badge">Under Review</span></p>
+                </div>
+              </article>
+
+            <article class="publication-item">
+              <div class="pub-thumb"><img src="assets/research/projects/multi.png" alt="OctoNet" /></div>
+              <div class="pub-content">
+                <h3 class="pub-title">OctoNet: A Large-Scale Multi-Modal Dataset for Human Activity Understanding Grounded in Motion-Captured 3D Pose Labels</h3>
+                <p class="pub-authors">Dongsheng Yuan, Xie Zhang, Weiying Hou, Sheng Lyu, <strong class="pub-me">Yuemin Yu</strong>, Luca Jiang-Tao Yu, Chengxiao Li, Chenshu Wu</p>
+                <p class="pub-venue"><span class="venue-badge">NeurIPS 2025 D&B</span></p>
+                <div class="pub-links">
+                  <a href="https://openreview.net/forum?id=z3TftXOizf" target="_blank" rel="noopener">OpenReview</a>
+                  <a href="https://aiot-lab.github.io/OctoNet/" target="_blank" rel="noopener">Project Page</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="publication-item">
+              <div class="pub-thumb"><img src="assets/research/projects/rir.jpg" alt="Room Impulse Response" /></div>
+              <div class="pub-content">
+                <h3 class="pub-title">Temporal Modeling of Room Impulse Response Generation via Multi-Scale Autoregressive Learning</h3>
+                <p class="pub-authors">Sheng Lyu, <strong class="pub-me">Yuemin Yu</strong>, Chenshu Wu</p>
+                <p class="pub-venue"><span class="venue-badge">Interspeech 2025</span></p>
+                <div class="pub-links">
+                  <a href="assets/documents/publications/temporal.pdf" target="_blank" rel="noopener">PDF</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="publication-item">
+              <div class="pub-thumb"><img src="assets/research/projects/vecare.png" alt="VeCare" /></div>
+              <div class="pub-content">
+                <h3 class="pub-title">Statistical Acoustic Sensing For Real-Time Respiration Monitoring and Presence Detection</h3>
+                <p class="pub-authors">Sheng Lyu, Ruiming Huang, <strong class="pub-me">Yuemin Yu</strong>, Chenshu Wu</p>
+                <p class="pub-venue"><span class="venue-badge">MobiSys 2024</span></p>
+                <div class="pub-links">
+                  <a href="assets/documents/publications/vecaredemo.pdf" target="_blank" rel="noopener">PDF</a>
+                  <a href="https://youtu.be/1bxpXNwHGv0" target="_blank" rel="noopener">Demo</a>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
-    </header>
 
-    <!-- News section removed as requested -->
-
-      <!-- Projects -->
-      <section id="projects" class=" container">
-        <div class="division"></div>
-        <div class="content-text">
-          <h2>Research</h2>
-        </div>
-        <article class="project-list" style="padding-top:0.5rem;">
-          <div class="content-text news-container" style="margin-top:0.2rem; margin-bottom:0.6rem;">
-          </div>
-          <div class="project-entry">
-            <div class="publication-card">
-              <div class="publication-info">
-                <div class="publication-info-block">
-                  <div class="pub-thumb"><img src="assets/research/projects/multi.png" alt="Octonet" /></div>
-                  <div>
-                    <div class="publication-title">OctoNet: A Large-Scale Multi-Modal Dataset for Human Activity Understanding Grounded in Motion-Captured 3D Pose Labels</div>
-                    <div class="publication-authors">Dongsheng Yuan, Xie Zhang, Weiying Hou, Sheng Lyu, <strong>Yuemin Yu</strong>, Luca Jiang-Tao Yu,  Chengxiao Li, Chenshu Wu</div>
-                    <div class="publication-venue">NeurIPS 2025 D&B</div>
-                    <div class="publication-links">
-                      <a href="https://openreview.net/forum?id=z3TftXOizf&referrer=[Author%20Console](%2Fgroup%3Fid%3DNeurIPS.cc%2F2025%2FDatasets_and_Benchmarks_Track%2FAuthors%23your-submissions)" target="_blank" rel="noopener">OpenReview</a>
-                      <a href="https://aiot-lab.github.io/OctoNet/" target="_blank" rel="noopener">Project Page</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="publication-info-block">
-                  <div class="pub-thumb"><img src="assets/research/projects/rir.jpg" alt="Room Acoustics Modelling" /></div>
-                  <div>
-                    <div class="publication-title">Temporal Modeling of Room Impulse Response Generation via Multi-Scale Autoregressive Learning</div>
-                    <div class="publication-authors">Sheng Lyu, <strong>Yuemin Yu</strong>, Chenshu Wu</div>
-                    <div class="publication-venue">Interspeech 2025</div>
-                    <div class="publication-links">
-                      <a href="assets/documents/publications/temporal.pdf" target="_blank" rel="noopener">PDF</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="publication-info-block">
-                  <div class="pub-thumb"><img src="assets/research/projects/vecare.png" alt="Acoustic Sensing Graph" /></div>
-                  <div>
-                    <div class="publication-title">Statistical Acoustic Sensing For Real-Time Respiration Monitoring and Presence Detection</div>
-                    <div class="publication-authors">Sheng Lyu, Ruiming Huang, <strong>Yuemin Yu</strong>, Chenshu Wu</div>
-                    <div class="publication-venue">MobiSys 2024 (Demo/Poster/Workshop)</div>
-                    <div class="publication-links">
-                      <a href="assets/documents/publications/vecaredemo.pdf" target="_blank" rel="noopener">PDF</a>
-                      <a href="https://youtu.be/1bxpXNwHGv0?si=1LY6nf2V-2FU37xz" target="_blank" rel="noopener">Demo Video</a>
-                    </div>
-                  </div>
-                </div>
+      <!-- Awards Section -->
+      <section id="awards" class="section">
+        <div class="section-container">
+          <h2 class="section-title">Awards & Honors</h2>
+          <div class="awards-list">
+            <div class="award-item">
+              <span class="award-year">2025</span>
+              <div class="award-content">
+                <p class="award-name">Postgraduate Scholarship</p>
+                <p class="award-org">The University of Hong Kong</p>
+              </div>
+            </div>
+            <div class="award-item">
+              <span class="award-year">2024</span>
+              <div class="award-content">
+                <p class="award-name">Exchange Scholarship</p>
+                <p class="award-org">Reaching Out Award & HKU Worldwide Exchange</p>
+              </div>
+            </div>
+            <div class="award-item">
+              <span class="award-year">2024</span>
+              <div class="award-content">
+                <p class="award-name">Mitacs Globalink Research Internship Award</p>
+                <p class="award-org">Western University, Canada</p>
+              </div>
+            </div>
+            <div class="award-item">
+              <span class="award-year">2021-25</span>
+              <div class="award-content">
+                <p class="award-name">HKU Foundation Entrance Scholarship</p>
+                <p class="award-org">The University of Hong Kong</p>
+              </div>
+            </div>
+            <div class="award-item">
+              <span class="award-year">2021-22</span>
+              <div class="award-content">
+                <p class="award-name">Dean's Award</p>
+                <p class="award-org"><a href="https://engg.hku.hk">Faculty of Engineering, HKU</a></p>
               </div>
             </div>
           </div>
-        </article>
-      </section>
-
-      <!-- awards -->
-      <section id="awards" class="container">
-        <div class="division"></div>
-        <div class="content-text news-container">
-          <h2 style="text-align: center;">Awards</h2>
-          <ul class="awards-list-simple" style="text-align: left; padding-top:0.5rem;">   
-            <li style="list-style-type: disc;"><strong>2025.09 - present:</strong> Postgraduate Scholarship, HKU</li>
-            <li style="list-style-type: disc;"><strong>2024.03:</strong> Exchange Scholarship
-              (jointly-funded by Reaching Out Award and HKU Worldwide Undergraduate Student Exchange Scholarships)</li>
-            <li style="list-style-type: disc;"><strong>2024.02:</strong> Mitacs Globalink Research
-              Internship Award Candidate (Western University, Canada)</li>
-            <li style="list-style-type: disc;"><strong>2021.09 - 2025.06:</strong> HKU Foundation
-              entrance scholarship</li>
-            <li style="list-style-type: disc;"><strong>2021.09 - 2022.06:</strong> Dean's Award, <a
-                href="https://engg.hku.hk">Faculty of Engineering, HKU</a></li>
-            
-          </ul>
         </div>
       </section>
 
-      <!-- Services -->
-      <section id="services" class="container">
-        <div class="division" style="margin-bottom: 2rem;"></div>
-        <div class="content-text news-container">
-          <h2 style="text-align: center; padding-bottom: 0.5rem;">Services</h2>
-          <ul class="service-list-simple" style="text-align: left; padding-top:0.5rem;">
-            <li style="list-style-type: disc; ">
-              <strong>Invited Reviewer:</strong> IEEE ICPADS 2025, IEEE Trans. Mob. Comput.
-            </li>
-            <li style="list-style-type: disc; ">
-              <strong>Local Volunteer:</strong> ACM CoNEXT 2025
-            </li>
-          </ul>
+      <!-- Services Section -->
+      <section id="services" class="section">
+        <div class="section-container">
+          <h2 class="section-title">Professional Service</h2>
+          <div class="service-list">
+            <div class="service-item">
+              <p><strong>Reviewer:</strong> IEEE ICPADS 2025, IEEE Transactions on Mobile Computing</p>
+            </div>
+            <div class="service-item">
+              <p><strong>Volunteer:</strong> ACM CoNEXT 2025 (Local Organizer)</p>
+            </div>
+          </div>
         </div>
       </section>
 
-    <!-- Teaching -->
-    <section id="teaching" class="container">
-      <div class="division" style="margin-bottom: 2rem;"></div>
-      <div class="content-text news-container">
-        <h2 style="text-align: center; padding-bottom: 0.5rem;">Teaching</h2>        
-        <ul class="teaching-list-simple" style="text-align: left; padding-top:0.5rem;">
-          <li style="list-style-type: disc; ">
-            <strong>AY 2025-26 Sem 2,</strong> Graduate Teaching Assistant, <a href="https://comp3516-hku.github.io/comp3516-2026/">COMP3516 Data Analytics for IoT, HKU</a>.
-          </li>
-        </ul>
-        <ul class="teaching-list-simple" style="text-align: left; padding-top:0.5rem;">
-          <li style="list-style-type: disc; ">
-            <strong>AY 2022-23 Sem 1,</strong> UG Teaching Assistant, ENGG1330 Computer Programming I, HKU.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Misc -->
-     <section id="misc" class="container">
-      <div class="division"></div>
-        <div class="personal-card">
-          <p>I have a separate page <a href="/personal.html"><strong>here</strong></a> to share some personal stuff, feel free to check it out!</p>
+      <!-- Teaching Section -->
+      <section id="teaching" class="section">
+        <div class="section-container">
+          <h2 class="section-title">Teaching</h2>
+          <div class="teaching-list">
+            <div class="teaching-item">
+              <span class="teaching-term">AY 2025-26 Sem 2</span>
+              <p><strong>Graduate Teaching Assistant</strong>, <a href="https://comp3516-hku.github.io/comp3516-2026/">COMP3516 Data Analytics for IoT</a>, HKU</p>
+            </div>
+            <div class="teaching-item">
+              <span class="teaching-term">AY 2022-23 Sem 1</span>
+              <p><strong>Undergraduate Teaching Assistant</strong>, ENGG1330 Computer Programming I, HKU</p>
+            </div>
+          </div>
         </div>
-      </div>
-     </section>
+      </section>
+
+      <!-- Misc Section -->
+      <section id="misc" class="section">
+        <div class="section-container">
+          <div class="misc-card">
+            <p>Curious about the person behind the research? Visit my <a href="/personal.html"><strong>personal page</strong></a> for photos, travels, and more.</p>
+          </div>
+        </div>
+      </section>
     </div>
-    <footer id="footer">
-      <div class="container">
-        <!-- Attribution -->
-        <p>Copyright &copy; Yuemin Yu <span id="datee"></span>, All rights reserved</p>
-        <p>Last updated: 2026-03-14</p>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p>&copy; 2025 Yuemin Yu. All rights reserved.</p>
+        <p class="footer-meta">Last updated: March 2025</p>
       </div>
     </footer>
-    
+
     <script src="js/script.js"></script>
   </body>
 </html>
